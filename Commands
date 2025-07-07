@@ -1,0 +1,29 @@
+
+https://github.com/astral-sh/uv
+UV init Projectfoldername
+uv init
+
+uv venv
+
+.venv\Scripts\activate
+
+uv add -r requirements.txt
+
+uv add ipykernel
+
+
+doskey/history
+
+git add .
+
+git commit -m "Tool flow updated"
+
+git push
+
+unicorn  main:app --reload  --port 8080
+
+streamlit  run streamlit_app.py
+
+
+uvicorn 
+main:app --host 0.0.0.0 --port 8000 --reload
