@@ -27,3 +27,31 @@ streamlit  run streamlit_app.py
 
 uvicorn 
 main:app --host 0.0.0.0 --port 8000 --reload
+
+
+Option 1: Remove the existing remote and add the new one
+bash# Remove the existing remote
+git remote remove origin
+
+# Add your new repository
+git remote add origin https://github.com/codeofelango/AI_Recruitment_Agent.git
+
+# Push to the new repository
+git push -u origin main
+Option 2: Check what the current remote is pointing to
+bash# See current remote URL
+git remote -v
+This will show you which repository it's currently connected to. If it's already the correct one, you can just push directly.
+Option 3: Change the existing remote URL
+bash# Change the remote URL to your new repository
+git remote set-url origin https://github.com/codeofelango/AI_Recruitment_Agent.git
+
+# Push to the new repository
+git push -u origin main
+Option 4: Use a different remote name
+bash# Add remote with a different name
+git remote add new-origin https://github.com/codeofelango/AI_Recruitment_Agent.git
+
+# Push to the new remote
+git push -u new-origin main
+
